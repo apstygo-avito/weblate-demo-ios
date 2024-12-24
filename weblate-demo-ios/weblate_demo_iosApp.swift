@@ -1,10 +1,3 @@
-//
-//  weblate_demo_iosApp.swift
-//  weblate-demo-ios
-//
-//  Created by Artem Pstygo on 24.12.2024.
-//
-
 import SwiftUI
 
 @main

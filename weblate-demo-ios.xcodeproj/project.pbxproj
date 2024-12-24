@@ -11,6 +11,8 @@
 		2E6378452D1AA07800FA5143 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6378442D1AA07800FA5143 /* ContentView.swift */; };
 		2E6378472D1AA07900FA5143 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E6378462D1AA07900FA5143 /* Assets.xcassets */; };
 		2E63784A2D1AA07900FA5143 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E6378492D1AA07900FA5143 /* Preview Assets.xcassets */; };
+		2E6378552D1AA2A900FA5143 /* ModuleA in Frameworks */ = {isa = PBXBuildFile; productRef = 2E6378542D1AA2A900FA5143 /* ModuleA */; };
+		2E6378582D1AA33500FA5143 /* ModuleB in Frameworks */ = {isa = PBXBuildFile; productRef = 2E6378572D1AA33500FA5143 /* ModuleB */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		2E6378442D1AA07800FA5143 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2E6378462D1AA07900FA5143 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E6378492D1AA07900FA5143 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2E6378522D1AA21C00FA5143 /* ModuleA */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ModuleA; sourceTree = "<group>"; };
+		2E6378562D1AA2EC00FA5143 /* ModuleB */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ModuleB; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E6378552D1AA2A900FA5143 /* ModuleA in Frameworks */,
+				2E6378582D1AA33500FA5143 /* ModuleB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,7 +42,10 @@
 			isa = PBXGroup;
 			children = (
 				2E6378412D1AA07800FA5143 /* weblate-demo-ios */,
+				2E6378522D1AA21C00FA5143 /* ModuleA */,
+				2E6378562D1AA2EC00FA5143 /* ModuleB */,
 				2E6378402D1AA07800FA5143 /* Products */,
+				2E6378532D1AA2A900FA5143 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +76,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		2E6378532D1AA2A900FA5143 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +99,10 @@
 			dependencies = (
 			);
 			name = "weblate-demo-ios";
+			packageProductDependencies = (
+				2E6378542D1AA2A900FA5143 /* ModuleA */,
+				2E6378572D1AA33500FA5143 /* ModuleB */,
+			);
 			productName = "weblate-demo-ios";
 			productReference = 2E63783F2D1AA07800FA5143 /* weblate-demo-ios.app */;
 			productType = "com.apple.product-type.application";
@@ -279,6 +299,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +328,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,6 +364,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2E6378542D1AA2A900FA5143 /* ModuleA */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ModuleA;
+		};
+		2E6378572D1AA33500FA5143 /* ModuleB */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ModuleB;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2E6378372D1AA07800FA5143 /* Project object */;
 }
